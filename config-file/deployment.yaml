@@ -9,13 +9,13 @@ spec:
   selector:
     matchLabels:
       app: react
-template:
+  template:
     metadata:
       labels:
         app: react
     spec:
       containers:
-      - name: react
-        image: menghout43/my-react-restaurant-image
-        ports:
-        - containerPort: 3000
+        - name: react
+          image: menghout43/my-react-restaurant-image:latest
+          ports:
+            - containerPort: 3000
