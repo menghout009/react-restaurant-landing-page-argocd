@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-restaurant-landing-page
+  labels:
+    app: react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react
+template:
+    metadata:
+      labels:
+        app: react
+    spec:
+      containers:
+      - name: react
+        image: menghout43/my-react-restaurant-image
+        ports:
+        - containerPort: 3000
