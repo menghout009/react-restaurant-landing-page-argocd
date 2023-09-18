@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-restaurant-landing-page
+  name: react-restaurant
   labels:
     app: react
 spec:
