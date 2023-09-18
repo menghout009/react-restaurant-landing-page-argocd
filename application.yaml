@@ -11,7 +11,7 @@ spec:
     path: config-file
 destination: 
     server: https://kubernetes.default.svc
-    namespace: myreactapp
+    namespace: myapp
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
