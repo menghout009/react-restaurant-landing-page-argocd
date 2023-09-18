@@ -5,19 +5,16 @@ metadata:
   namespace: argocd
 spec:
   project: default
-
   source:
-    repoURL: https://github.com/menghout009/react-restaurant-landing-page.git
+    repoURL: https://github.com/menghout009/react-restaurant-landing-page-argocd.git
     targetRevision: HEAD
-    path: .
+    path: config-file
 destination: 
     server: https://kubernetes.default.svc
-    namespace: react
-
+    namespace: myreactapp
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-
     automated:
       selfHeal: true
       prune: true
