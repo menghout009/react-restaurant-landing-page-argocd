@@ -18,4 +18,4 @@ spec:
         - name: react
           image: menghout43/my-react-restaurant-image:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 80
